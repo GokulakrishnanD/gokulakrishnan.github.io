@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+      <nav id="desktop-nav">
+          <div class="logo"><b>Gokulakrishnan</b></div>
+          <div>
+              <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Work History</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#cert">Certification</a></li>                 
+                  <li><a href="#hobbies">Hobbies</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      <nav id="hamburger-nav">
+          <div class="logo">n</div>
+          <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <div class="menu-links">
+                  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                  <li><a href="#experience" onclick="toggleMenu()">Work History</a></li>
+                  <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                  <li><a href="#cert" onclick="toggleMenu()">Certification</a></li>
+                  <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+                  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+          </div>
+      </nav>
+      <section id="profile">
+          <div class="section__pic-container">
+              <img src="./assets/profile-pic.png" alt="Gokul profile picture" />
+          </div>
+          <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Gokul</h1>
+              <p class="section__text__p2">Mobile Application Developer</p>
+              <div class="btn-container">
+                  <button class="btn btn-color-2"
+                          onclick="window.open('./assets/resume-example.pdf')">
+                      Download My Resume
+                  </button>
+
+              </div>
+              <div id="socials-container">
+                  <img src="./assets/linkedin.png"
+                       alt="My LinkedIn profile"
+                       class="icon"
+                       onclick="location.href=' https://www.linkedin.com/in/gokulakrishnan-ds/ ' " />
+
+              </div>
+          </div>
+      </section>
+      <section id="about">
+        <div class="about-header">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+        </div>
+    
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+            </div>
+    
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <!-- Experience 1 -->
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2 Years <br />Mobile Application Development</p>
+                    </div>
+    
+                    <!-- Experience 2 -->
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>1 Year <br />Web Application</p>
+                    </div>
+    
+                    <!-- Experience 3 -->
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>3 Years <br />Business Development Executive</p>
+                    </div>
+    
+                    <!-- Education -->
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Bachelor of Engineering<br />&<br />Diploma in Engineering</p>
+                    </div>
+                </div>
+    
+                
+            </div>
+            
+        </div>
+        <br/>
+        <div class="text-container">
+            <p>
+                Experienced Flutter Developer with expertise in mobile and web applications, specializing in Android & iOS development.  
+                Developed high-impact apps, including an E-Commerce platform, an Electric Scooter Rental system, and a Devotional App,  
+                optimizing backend performance, integrating Firebase, Razorpay, and GPS tracking for seamless user experience.  
+                Strong background in state management (Provider, MVVM) and REST API integration, ensuring scalable and efficient solutions.  
+                Built CRM software, enhancing work management with Python and PostgreSQL, improving productivity by 30% for enterprises.  
+                Proven sales and customer service expertise, exceeding targets at IFB Appliances through strategic product demonstrations.  
+                Adept at utilizing Git, FlutterFlow, and cloud platforms (GCP) to deliver high-quality, user-centric applications.  
+            </p>
+        </div>
+    </section>
+    
+    <br/>
+    <br/>
+      <section id="experience">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Work History</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">July 2023 - December 2024</h2>
+                      <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Fues Technology Solutions - Chennai</h3>
+                                <p>Mobile Application Developer (Android & iOS)</p></div>
+                        </article>
+                    </div>
+                    
+                  </div>
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">May 2022 -   May 2023</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>
+                                      Altruist Technology Solutions - Chennai
+                                  </h3>
+                                  <p>Web Application Developer</p>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+                  <div class="details-container">
+                    <h2 class="experience-sub-title">July 2022 - April 2023</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                 alt="Experience icon"
+                                 class="icon" />
+                            <div>
+                                <h3>
+                                    IFB Appliancies Ltd - Coimbatore
+                                </h3>
+                                <p>Business Development Executive</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+      </section>
+      <section id="skills">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Skills</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Development</h2>
+
+                      <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>Flutter</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>Dart</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>Android & iOS</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>Java</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>Python</h3><p>Intermediate</p></div>
+                        </article>
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>HTML, CSS</h3><p>Experienced</p></div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>TypeScript</h3><p>Basics</p></div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>Angular</h3><p>Basics</p></div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>PHP</h3><p>Basics</p></div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>SQL- PostgreSQL , MySQL</h3><p>Experienced</p></div>
+                        </article>
+                    </div>
+                    
+
+                  </div>
+                  <div class="details-container">
+                    <h2 class="experience-sub-title">Tools & Platforms</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Tool icon" class="icon" />
+                            <div><h3>Android Studio</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Tool icon" class="icon" />
+                            <div><h3>Xcode</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Tool icon" class="icon" />
+                            <div><h3>Visual Studio Code</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Tool icon" class="icon" />
+                            <div><h3>Git/GitHub</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Tool icon" class="icon" />
+                            <div><h3>FlutterFlow</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Tool icon" class="icon" />
+                            <div><h3>Flutlab</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>Firebase Integration</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>REST API Integration</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>MVVM Model</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>State Management</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                            <div><h3>Google Cloud Platform (GCP)</h3><p>Intermediate</p></div>
+                        </article>
+                    </div>
+                </div>
+                
+              </div>
+          </div>
+
+      </section>
+      <section id="cert">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Certifications</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Certified Python Programmer</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Besant Technologies - Chennai </h3>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+      <section id="hobbies">
+        <h1 class="title">Hobbies</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-1.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Pet Lover</h2>
+                     
+                  </div>
+
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-2.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Website Devlopment</h2>
+                      <div class="btn-container">
+                          
+                      </div>
+                  </div>
+
+
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-3.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <br/>
+                      <br/>
+                      <h2 class="experience-sub-title project-title">Small Application Android & iOS Projects</h2>
+                      
+                  </div>
+
+                  
+                  </div>
+              </div>
+          </div>
+
+      </section>
+
+      <section id="contact">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                  <img src="./assets/email.png"
+                       alt="Email icon"
+                       class="icon contact-icon email-icon" />
+                  <p><a href="mailto:Joeamuthancse27@live.com">gokulakrishnan3570@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                  <img src="./assets/linkedin.png"
+                       alt="LinkedIn icon"
+                       class="icon contact-icon" />
+                  <p><a href="https://www.linkedin.com/in/gokulakrishnan-ds/">LinkedIn</a></p>
+              </div>
+          </div>
+      </section>
+      <footer>
+          <nav>
+              <div class="nav-links-container">
+                  <ul class="nav-links">
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#experience">Work History</a></li>
+                      <li><a href="#skills">Skills</a></li>
+                      <li><a href="#cert">Certification</a></li>
+                      
+                      <li><a href="#hobbies">Hobbies</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+          <p>Copyright &#169; 2024 Joe. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
